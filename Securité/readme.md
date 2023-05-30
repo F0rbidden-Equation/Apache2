@@ -43,4 +43,3 @@ Voici quelques mesures de protection recommandées pour sécuriser votre serveur
   - Configurez un pare-feu pour bloquer les connexions provenant d'adresses IP suspectes.
   - Utilisez des outils de détection de scans de ports pour détecter les activités suspectes.
 
-N'oubliez pas de
