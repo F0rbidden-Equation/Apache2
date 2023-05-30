@@ -45,6 +45,7 @@ Avant de configurer le VirtualHost pour le port 443 avec SSL, nous devons instal
     # Fichier de log des accès.
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
+
 <VirtualHost *:443>
     # Définit le VirtualHost pour le port 443.
     ServerName example.com
