@@ -21,16 +21,16 @@ Avant de configurer le VirtualHost pour le port 443 avec SSL, nous devons instal
    ```bash
    $ sudo certbot certonly --webroot -w /var/www/html -d example.com
    ```
-   **Activé le module SSL : **
+   *Activé le module SSL : *
    ```bash
    $ sudo a2enmod ssl
    ```
-   *** Desactivé l'ancienne config par defaut SSL :
+   Desactivé l'ancienne config par defaut SSL :
    ```bash
    $ sudo a2dissite default-ssl.conf 
    ```
-   ```bash
    Activé la nouvelle configuration VirtualHost integrant la partie SSL :
+   ```bash
    $ sudo a2ensite http_445.conf
    ```
    
