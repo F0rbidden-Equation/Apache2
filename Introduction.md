@@ -26,4 +26,3 @@ Il convient de noter que cette explication est une simplification du fonctionnem
 
 Cela conclut le premier chapitre de notre tutoriel sur Apache2. Vous avez appris ce qu'est Apache2 et comment il fonctionne. Dans le prochain chapitre, nous aborderons l'installation et la configuration d'Apache2 sur votre système.
 
-N'hésitez pas à adapter ce tutoriel en fonction de vos besoins spécifiques et à ajouter des sections supplémentaires si nécessaire. Bonne rédaction de votre README !
