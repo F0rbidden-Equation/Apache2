@@ -38,6 +38,17 @@ Avant de configurer le VirtualHost pour le port 443 avec SSL, nous devons instal
  
  
 ```apacheconf
+<VirtualHost *:80>
+    # Définit le VirtualHost pour le port 80.
+    ServerName example.com
+    # Spécifie le répertoire racine du site web.
+    DocumentRoot /var/www/html
+    # Fichier de log des erreurs.
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    # Fichier de log des accès.
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
 <VirtualHost *:443>
     # Définit le VirtualHost pour le port 443.
     ServerName localhost
