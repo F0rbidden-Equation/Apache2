@@ -26,7 +26,6 @@ Il convient de noter que cette explication est une simplification du fonctionnem
 
 Cela conclut le premier chapitre de notre tutoriel sur Apache2. Vous avez appris ce qu'est Apache2 et comment il fonctionne. Dans le prochain chapitre, nous aborderons l'installation et la configuration d'Apache2 sur votre système.
 
-# Tutoriel Apache2
 
 ## Chapitre 2 : Architecture des fichiers et configurations par défaut
 
@@ -52,7 +51,7 @@ Maintenant que vous avez une idée de l'architecture des fichiers dans Apache2, 
 
 - **`default-ssl.conf`** : Ce fichier se trouve dans le répertoire `/etc/apache2/sites-available/` et contient la configuration par défaut pour les sites web sécurisés (HTTPS). Il définit les directives de base pour la configuration SSL et peut être utilisé comme point de départ pour la configuration des sites sécurisés.
 
-# Tutoriel Apache2
+
 
 ## Chapitre 3 : Installation d'Apache2 sur Linux
 
