@@ -15,7 +15,7 @@ Les configurations de VirtualHost vous permettent de définir différents sites 
     # Fichier de log des accès.
     CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-
+```
 ## Chapitre 5 : Configurations de VirtualHost HTTPS 443
 
 Voici un exemple de configuration pour le port 443 (HTTPS) avec SSL et la redirection du port 80 :
@@ -43,3 +43,4 @@ Voici un exemple de configuration pour le port 443 (HTTPS) avec SSL et la redire
 
     # Autres directives de configuration spécifiques au VirtualHost pour le port 443
 </VirtualHost>
+```
