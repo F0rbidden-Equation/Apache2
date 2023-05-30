@@ -98,3 +98,89 @@ Voici les étapes à suivre pour installer Apache2 :
 
 4. **Vérification de l'installation** : Vous pouvez maintenant vérifier si Apache2 est correctement installé et fonctionne. Ouvrez un navigateur web et accédez à l'adresse suivante :
 5. **http://localhost/**
+
+# Tutoriel Apache2
+
+## Chapitre 4 : Sécurité d'Apache2
+
+La sécurité est un aspect essentiel de la configuration d'Apache2 pour protéger vos sites web et vos données sensibles. Apache2 offre plusieurs modules de sécurité pour renforcer la protection de votre serveur. Dans ce chapitre, nous examinerons les différents modules de sécurité disponibles, leurs templates de fichiers `.conf` associés et les mesures de protection recommandées.
+
+### 1. **Sécurité de base**
+
+#### Le module `mod_authz_core`
+
+Le module `mod_authz_core` permet de gérer les autorisations d'accès aux ressources du serveur Apache2. Il est utilisé pour restreindre l'accès à certaines parties du serveur en fonction des autorisations spécifiées.
+
+Template de fichier `.conf` associé : `apache2.conf`
+
+Mesures de protection recommandées :
+- Utilisez la directive `Require all denied` pour refuser l'accès par défaut à toutes les ressources, puis spécifiez les autorisations nécessaires avec des directives `Require` spécifiques.
+
+### 2. **Sécurité avancée**
+
+#### Le module `mod_security`
+
+Le module `mod_security` est un pare-feu d'application web (WAF) qui vous permet de détecter et de prévenir les attaques sur vos sites web. Il offre une protection contre les injections de code, les attaques de force brute, les injections SQL et d'autres types d'attaques courantes.
+
+Template de fichier `.conf` associé : `modsecurity.conf`
+
+Mesures de protection recommandées :
+- Configurez les règles appropriées pour détecter et bloquer les attaques courantes, telles que les tentatives de force brute, les injections de code, les injections SQL, etc.
+- Effectuez une analyse régulière des journaux pour identifier les activités suspectes.
+
+### 3. **Protections supplémentaires**
+
+#### Le module `mod_evasive`
+
+Le module `mod_evasive` permet de détecter et de bloquer les attaques de déni de service distribué (DDoS) en surveillant les motifs de trafic anormal. Il peut ajuster dynamiquement les règles de filtrage pour bloquer les adresses IP suspectes.
+
+Template de fichier `.conf` associé : `evasive.conf`
+
+Mesures de protection recommandées :
+- Configurez le module `mod_evasive` avec des valeurs appropriées pour détecter et bloquer les attaques DDoS.
+
+#### Le module `mod_ssl`
+
+Le module `mod_ssl` permet de fournir des connexions sécurisées via le protocole SSL/TLS. Il est utilisé pour activer HTTPS et sécuriser les communications entre le serveur Apache2 et les clients.
+
+Template de fichier `.conf` associé : `default-ssl.conf`
+
+Mesures de protection recommandées :
+- Générez et utilisez des certificats SSL/TLS valides pour chiffrer les communications.
+- Configurez des protocoles et des chiffrements SSL/TLS forts pour garantir la sécurité des connexions.
+
+#### Mesures de protection supplémentaires :
+
+Voici quelques mesures de sécurité complémentaires que vous pouvez prendre pour renforcer la sécurité de votre serveur Apache2 :
+
+- **Protection contre les attaques de force brute** :
+  - Limitez le nombre de tentatives de connexion en utilisant des outils tels que Fail2Ban.
+  - Utilisez des politiques de mots de passe forts pour les utilisateurs et encouragez les pratiques d'authentification à deux facteurs (2FA).
+  - Mettez en place un délai entre les tentatives de connexion pour ralentir les attaques de force brute.
+
+  *Fichier `.conf` associé : `apache2.conf`*
+
+- **Protection contre les attaques DDoS** :
+  - Utilisez des pare-feux de réseau ou des services de protection DDoS pour filtrer le trafic malveillant.
+  - Configurer Apache2 pour limiter le nombre de connexions simultanées par adresse IP à l'aide de la directive `MaxClients`.
+
+  *Fichier `.conf` associé : `apache2.conf`*
+
+- **Protection contre les injections de code** :
+  - Appliquez les bonnes pratiques de développement web pour éviter les vulnérabilités d'injection de code.
+  - Validez et échappez correctement les données utilisateur avant de les utiliser.
+
+  *Fichier `.conf` associé : `modsecurity.conf`*
+
+- **Protection contre les injections SQL** :
+  - Utilisez des requêtes préparées ou des paramètres requêtes pour éviter les injections SQL.
+  - Appliquez des filtres de sécurité au niveau de l'application pour bloquer les tentatives d'injection SQL.
+
+  *Fichier `.conf` associé : `modsecurity.conf`*
+
+- **Protection contre les scans de ports** :
+  - Configurez un pare-feu pour bloquer les connexions provenant d'adresses IP suspectes.
+  - Utilisez des outils de détection de scans de ports pour détecter les activités suspectes.
+
+  *Fichier `.conf` associé : `apache2.conf`*
+
