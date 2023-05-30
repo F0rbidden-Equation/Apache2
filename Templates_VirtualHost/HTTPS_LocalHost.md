@@ -30,13 +30,7 @@ Avant de configurer le VirtualHost pour le port 443 avec SSL, nous devons instal
    ```bash
    $ sudo a2ensite http_445.conf
    ```
-   
-   
-   
-   
-  
- 
- 
+   Model de Configuration VirtualHost pour usage Local : 
 ```apacheconf
 <VirtualHost *:80>
     # Définit le VirtualHost pour le port 80.
