@@ -1,7 +1,12 @@
 ## Modèle 8 : Protection contre les attaques de scan de ports avec le module mod_antiloris
 
 Ce modèle utilise le module mod_antiloris pour protéger votre serveur Apache2 contre les attaques de scan de ports. Le module mod_antiloris est conçu pour détecter et bloquer les tentatives d'établissement de connexion excessives, souvent utilisées dans les attaques de type DDoS.
-
+### Mod_Antiloris
+Pour installer le module mod_antiloris pour Apache2 :
+```bash
+ sudo apt-get install libapache2-mod-antiloris
+ sudo service apache2 restart
+```
 ```apache
 <VirtualHost *:80>
     ServerName example.com
