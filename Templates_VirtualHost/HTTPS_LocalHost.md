@@ -1,4 +1,4 @@
-## Chapitre 5 : Configurations de VirtualHost HTTPS 443 LocalHost
+## Chapitre 5 : Configurations de VirtualHost HTTPS 443 LocalHost 
 
 Voici un exemple de configuration pour le port 443 (HTTPS) avec SSL et la redirection du port 80 :
 Avant de configurer le VirtualHost pour le port 443 avec SSL, nous devons installer et configurer openssl pour générer les certificats SSL. Voici les étapes à suivre :
