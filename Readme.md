@@ -26,6 +26,10 @@ Dans cette section, nous expliquerons les mesures de sécurité de base que vous
 ### Sécurité renforcée
 
 Cette section approfondira les techniques avancées pour renforcer la sécurité d'Apache2. Nous discuterons de la configuration du pare-feu, des règles de sécurité strictes et de l'ajout de couches supplémentaires de protection pour votre serveur web.
+```bash
+     Module : ModSecurity (WAF)
+```
+     
 
 ### Sécurité avancée
 
