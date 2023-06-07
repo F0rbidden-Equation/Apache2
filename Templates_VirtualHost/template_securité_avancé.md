@@ -24,4 +24,4 @@ sudo apt-get install libapache2-mod-headers
     
     # Autres directives de configuration spécifiques aux en-têtes de sécurité
     
-</VirtualHost>
+</VirtualHost> 
