@@ -1,7 +1,12 @@
 ## Modèle 7 : Protection contre les attaques par injection de code SQL avec le module mod_security
 
 Ce modèle utilise le module mod_security pour protéger votre serveur Apache2 contre les attaques par injection de code SQL. Le module mod_security est un pare-feu d'application web qui surveille les requêtes HTTP et les filtre en fonction de règles de sécurité pour bloquer les attaques.
-
+### ModSecurity
+Pour installer le module ModSecurity pour Apache2 :
+```bash
+     sudo apt-get install libapache2-mod-security2
+     sudo service apache2 restart
+```
 ```apache
 <VirtualHost *:80>
     ServerName example.com
