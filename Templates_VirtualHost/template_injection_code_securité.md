@@ -24,4 +24,4 @@ sudo service apache2 restart
     
     # Autres règles de réécriture et de redirection spécifiques pour bloquer les attaques
     
-</VirtualHost>
+</VirtualHost> 
