@@ -5,7 +5,7 @@ Ce modèle utilise le module mod_qos pour protéger votre serveur Apache2 contre
 Pour installer le module ModEvasive :
 ```bash
 sudo apt-get install libapache2-mod-evasive
-sudo apt-get install libapache2-mod-qos
+sudo apt-get install libapache2-mod-qos 
 ```
 ```apache
 <VirtualHost *:80>
