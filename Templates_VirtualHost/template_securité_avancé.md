@@ -1,7 +1,11 @@
 ## Modèle 3 : Sécurité avancée avec en-têtes de sécurité
 
 Ce modèle inclut la configuration des en-têtes de sécurité HTTP pour renforcer la sécurité du site web et prévenir les attaques telles que le détournement de clics, le chargement de contenu mixte et les attaques XSS.
-
+### ModHeaders (Gestion des en-têtes de sécurité)
+Pour installer le module ModHeaders :
+```bash
+sudo apt-get install libapache2-mod-headers
+```
 ```apache
 <VirtualHost *:80>
     ServerName example.com
