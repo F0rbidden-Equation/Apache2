@@ -22,24 +22,43 @@ Dans ce chapitre, nous aborderons les modules de sécurité pour Apache2. Nous d
 ### Sécurité de base
 
 Dans cette section, nous expliquerons les mesures de sécurité de base que vous pouvez mettre en place pour protéger votre serveur Apache2 contre les attaques courantes. Nous vous guiderons à travers les configurations et les bonnes pratiques de sécurité recommandées.
-
+```bash
+    mod_headers : Permet de manipuler les en-têtes HTTP pour ajouter des directives de sécurité.
+    mod_dir : Gère les requêtes de répertoire et désactive l'affichage des index des répertoires.
+    mod_mime : Associe les types de fichiers aux extensions de fichiers pour des restrictions de sécurité.
+    mod_env : Permet de définir des variables d'environnement pour contrôler le comportement du serveur.
+```
 ### Sécurité renforcée
 
 Cette section approfondira les techniques avancées pour renforcer la sécurité d'Apache2. Nous discuterons de la configuration du pare-feu, des règles de sécurité strictes et de l'ajout de couches supplémentaires de protection pour votre serveur web.
 ```bash
-     Module : ModSecurity (WAF)
+    mod_ssl : Fournit le support du chiffrement SSL/TLS pour les connexions sécurisées (HTTPS).
+    mod_security : Un pare-feu d'application web (WAF) qui détecte et bloque les attaques web.
+    mod_evasive : Protège contre les attaques par déni de service distribué (DDoS) en bloquant les adresses IP suspectes.
+    mod_qos : Gère la qualité de service pour limiter la bande passante et les ressources pour les attaquants.
 ```
+
      
 
 ### Sécurité avancée
 
 Dans cette section, nous explorerons des méthodes de sécurité avancées pour Apache2. Nous aborderons des sujets tels que la mise en place de certificats SSL/TLS, la configuration du chiffrement, l'utilisation de listes de contrôle d'accès (ACL) et d'autres techniques avancées de sécurité.
-
+```bash
+    mod_cgi : Permet l'exécution de scripts CGI tout en appliquant des restrictions de sécurité.
+    mod_include : Autorise l'inclusion de contenu dynamique dans les pages web en appliquant des mesures de sécurité.
+```
 ### Protections contre les attaques
 
 Cette section couvrira les principales protections contre les attaques les plus courantes auxquelles les serveurs Apache2 sont confrontés. Nous expliquerons comment mettre en place des mesures de prévention et de détection pour les attaques par force brute, les attaques DDoS, les injections de code, les injections SQL et les scans de ports.
 
+```bash
+            
+    mod_antiloris : Protège contre les attaques de type Low Orbit Ion Cannon (LOIC) en limitant le nombre de connexions simultanées.
+    mod_rewrite : Permet de réécrire les URL et d'appliquer des règles de sécurité spécifiques.
+    mod_proxy : Gère la mise en cache et le proxy inverse pour protéger le serveur contre les attaques directes.
 
+
+```
 
 
 
