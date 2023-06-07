@@ -19,4 +19,4 @@ Pour installer le module ModSecurity (WAF) pour Apache2 :
     
     # Autres directives de configuration spécifiques à ModSecurity
     
-</VirtualHost>
+</VirtualHost> 
