@@ -2,7 +2,7 @@
 
 Ce modèle utilise le module mod_rewrite pour protéger votre serveur Apache2 contre les attaques par injection de code, telles que les attaques XSS (Cross-Site Scripting) et les tentatives d'injection de SQL. Le module mod_rewrite permet de manipuler les URL et d'effectuer des redirections et des re-écritures d'URL afin de bloquer les attaques.
 ### ModSecurity (Protection contre les attaques par injection de code)
-Pour installer le module ModSecurity :
+Pour installer le  module ModSecurity :
 ```bash
 sudo apt-get install libapache2-mod-security2
 sudo apt-get install libapache2-mod-qos
