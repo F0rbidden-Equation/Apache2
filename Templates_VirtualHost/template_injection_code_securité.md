@@ -5,7 +5,6 @@ Ce modèle utilise le module mod_rewrite pour protéger votre serveur Apache2 co
 Pour installer le  module ModSecurity :
 ```bash
 sudo apt-get install libapache2-mod-security2
-sudo apt-get install libapache2-mod-qos
 ```
 ```apache
 <VirtualHost *:80>
